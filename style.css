@@ -1,0 +1,310 @@
+body {
+  font-family: "Public Sans", sans-serif;
+}
+span {
+  color: #645cff;
+}
+header {
+  margin: 1rem auto;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+header .navigation {
+  display: none;
+}
+.header h1 {
+  font-weight: bold;
+}
+.start {
+  background-color: #645cff;
+  height: 100vh;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.start a {
+  color: white;
+  text-decoration: none;
+}
+.start h1,
+.aboutUs h1,
+.ourServices h1,
+.featuredTours h1,
+.gallery h1 {
+  letter-spacing: 3px;
+  font-size: 35px;
+  text-align: center;
+}
+.aboutUsContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.aboutUsContent img {
+  height: auto;
+  width: 80%;
+}
+.galleryItem img {
+  height: auto;
+  width: 100%;
+}
+.aboutUs h1 {
+  letter-spacing: 3px;
+  text-align: center;
+}
+.text a {
+  text-decoration: none;
+  font-weight: bold;
+}
+.text {
+  margin: 40px 60px;
+}
+.ourServices {
+  background-color: #f8fbfb;
+}
+.servicesItems img {
+  background-color: #645cff;
+}
+.ourServices {
+  text-align: center;
+}
+
+.servicesItems {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.item {
+  width: 200px;
+  margin: 10px;
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.item img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 10px;
+}
+
+.item h2 {
+  margin: 0;
+}
+.item:nth-child(1),
+.item:nth-child(2) {
+  flex: 1;
+  margin-bottom: 0px;
+}
+
+.item:nth-child(3) {
+  width: 275px;
+}
+.featuredTours img {
+  height: auto;
+  width: 100%;
+}
+.featuredTours a {
+  color: #645cff;
+  text-decoration: none;
+  font-weight: bold;
+}
+.card {
+  position: relative;
+  text-align: center;
+}
+.labelTopLeft {
+  position: absolute;
+  top: 8px;
+  left: 0px;
+  background-color: #645cff;
+  width: 180px;
+}
+.underPhoto {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+}
+.underPhoto p {
+  text-align: left;
+  padding: 0;
+  margin: 0;
+}
+.underPhoto a {
+  color: #645cff;
+  text-decoration: none;
+}
+.featuredTours {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 50px;
+}
+.card {
+  overflow: hidden;
+  transition: 0.2s;
+  margin: 20px 0;
+  border: 1px solid rgba(128, 128, 128, 0.129);
+}
+.card:hover {
+  transform: translateY(-0.5%);
+  box-shadow: 0 4rem 8rem rgba(0, 0, 0, 0.2);
+}
+.galleryItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.galleryItem img {
+  border-bottom: 5px solid #645cff;
+}
+.violetBlock {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #645cff;
+  color: white;
+  height: 300px;
+}
+
+.violetBlockText {
+  width: 100%;
+  text-align: center;
+  width: 300px;
+}
+.violetBlockText h1 {
+  font-size: 40px;
+}
+.emailinput {
+  display: flex;
+  flex-direction: row;
+  width: 50vw;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #222222;
+  color: white;
+  text-decoration: none;
+  padding: 40px;
+}
+.navigation a {
+  color: inherit;
+  text-decoration: none;
+  float: left;
+  margin: 10px;
+}
+.navigation li {
+  float: left;
+
+  list-style-type: none;
+}
+
+@media only screen and (min-width: 992px) {
+  header .navigation {
+    display: inline;
+    font-weight: bold;
+  }
+  .start {
+    background: linear-gradient(rgba(74, 63, 218, 0.7), rgba(0, 0, 0, 0.7)),
+      url("https://images.unsplash.com/photo-1504280317859-9c6cce36bca8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format")
+        center/cover no-repeat;
+  }
+  .start h1 {
+    letter-spacing: 3px;
+    font-size: 50px;
+    text-align: center;
+  }
+  .start a {
+    background-color: #645cff;
+    text-align: center;
+    width: 130px;
+    height: 20px;
+  }
+  .galleryBox {
+    display: flex;
+    flex-direction: wrap;
+  }
+  .galleryItem {
+    flex: 1 0 25%;
+  }
+  .galleryItem img {
+    border: none;
+  }
+
+  .aboutUsContent {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .aboutUsContent img {
+    height: auto;
+    width: 50%;
+    position: relative;
+    padding: 0 40px;
+    background-color: white;
+    padding: 0;
+    box-shadow: 10px -10px 0 -3px white, 10px -10px 0 0px #645cff;
+  }
+  .allCards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .card:nth-child(1),
+  .card:nth-child(2),
+  .card:nth-child(3) {
+    flex: 1 0 30%;
+  }
+  .card:nth-child(4) {
+    flex: 0 0 33%;
+  }
+  .violetBlock {
+    display: flex;
+    flex-direction: row;
+    height: 250px;
+    width: 100%;
+  }
+  .violetBlockText {
+    padding: 50px;
+  }
+  .violetBlockText h1 {
+    text-align: left;
+    font-size: 30px;
+
+    margin-left: -20px;
+  }
+  .violetBlockText p {
+    text-align: left;
+
+    margin-left: -40px;
+  }
+  .emailInput {
+    display: flex;
+    flex-direction: row;
+  }
+  .emailInput input {
+    margin-right: -10px;
+  }
+  .item {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
