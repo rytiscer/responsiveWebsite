@@ -1,5 +1,7 @@
 body {
   font-family: "Public Sans", sans-serif;
+  margin: 0;
+  padding: 0;
 }
 span {
   color: #645cff;
@@ -68,17 +70,16 @@ header .navigation {
 }
 .ourServices {
   background-color: #f8fbfb;
+  text-align: center;
 }
 .servicesItems img {
   background-color: #645cff;
-}
-.ourServices {
-  text-align: center;
 }
 
 .servicesItems {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .item {
@@ -108,7 +109,7 @@ header .navigation {
 }
 
 .item:nth-child(3) {
-  width: 275px;
+  width: 33%;
 }
 .featuredTours img {
   height: auto;
